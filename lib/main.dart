@@ -32,15 +32,18 @@ class MyApp extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: 30.0),
+                        fontSize: 30.0,
+                      fontFamily: "Pacifico"
+                    ),
                   ),
                   Text(
-                    "Java Developer",
+                    "JAVA DEVELOPER",
                     style: TextStyle(
+                      fontFamily: 'sans-serif-pro',
                       color: Colors.white,
                       fontWeight: FontWeight.normal,
                       fontSize: 15.0,
-                      letterSpacing: 5.0,
+                      letterSpacing: 2.5,
                     ),
                   ),
                 ],
