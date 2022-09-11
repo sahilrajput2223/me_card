@@ -15,10 +15,43 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.cyan,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Me Card"),
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  CircleAvatar(
+                    radius: 60.0,
+                    backgroundImage: AssetImage("src/images/sahil.jpg"),
+                  ),
+                  Text(
+                    "Sahil Rajput",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30.0,
+                      fontFamily: "Pacifico"
+                    ),
+                  ),
+                  Text(
+                    "JAVA DEVELOPER",
+                    style: TextStyle(
+                      fontFamily: 'sans-serif-pro',
+                      color: Colors.white,
+                      fontWeight: FontWeight.normal,
+                      fontSize: 15.0,
+                      letterSpacing: 2.5,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
-      )
+      ),
     );
   }
 }
